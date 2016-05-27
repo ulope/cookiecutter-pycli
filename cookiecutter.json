@@ -1,0 +1,12 @@
+{
+	"full_name": "Ulrich Petri",
+	"email": "mail@ulo.pe",
+	"github_username": "ulope",
+	"project_name": "Python Command Line Tool",
+	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+	"project_short_description": "Cookiecutter template to create a CLI tool",
+	"release_date": "{% now 'local' %}",
+	"pypi_username": "{{ cookiecutter.github_username }}",
+	"year": "{{ cookiecutter.release_date[:4] }}",
+	"version": "0.1.0"
+}
