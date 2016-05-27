@@ -2,7 +2,7 @@
 cookiecutter-pycli
 ======================
 
-Cookiecutter_ template for a simple Python command line tool package.
+Cookiecutter_ template for a simple Python command line tool.
 
 * GitHub repo: https://github.com/ulope/cookiecutter-pycli/
 * Free software: MIT license
