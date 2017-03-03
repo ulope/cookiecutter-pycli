@@ -1,6 +1,6 @@
-======================
+==================
 cookiecutter-pycli
-======================
+==================
 
 Cookiecutter_ template for a simple Python command line tool.
 
@@ -13,7 +13,7 @@ Features
 * Command line interface with ``Click``
 * Testing setup with ``py.test``
 * Travis-CI_: Ready for Travis Continuous Integration testing
-* Tox_ testing: Setup to easily test for Python 3.4, 3.5
+* Tox_ testing: Setup to easily test for Python 3.4, 3.5, 3.6
 * Bumpversion: Pre-configured version bumping with a single command
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
