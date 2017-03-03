@@ -3,7 +3,9 @@ from setuptools import setup, find_packages
 
 
 requirements = [
-    "click==6.6",
+    "click==6.7",
+]
+
 ]
 
 

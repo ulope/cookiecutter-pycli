@@ -1,16 +1,25 @@
 import click
 
-@click.group()
+from {{ cookiecutter.project_slug }}.version import VERSION
+
+
+@click.group(help="{{ cookiecutter.project_short_description }}")
+@click.version_option(version=VERSION)
 @click.pass_context
 def main(ctx):
-    print("Here goes your code")
     ctx.obj = {}
 
 
-@main.command(name="sub", help="A subcommand")
+@main.command(name="a", help="Command A")
 @click.pass_obj
-def sub(obj):
-    print("Here goes the code for the 'sub' command")
+def command_a(obj):
+    print("Here goes the code for the 'a' command")
+
+
+@main.command(name="b", help="Command B")
+@click.pass_obj
+def command_b(obj):
+    print("Here goes the code for the 'b' command")
 
 
 def cli():
