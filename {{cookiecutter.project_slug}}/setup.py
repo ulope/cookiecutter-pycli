@@ -6,6 +6,9 @@ requirements = [
     "click==6.7",
 ]
 
+test_requirements = [
+    "pytest==3.0.6",
+    "pytest_click==0.1"
 ]
 
 
@@ -33,7 +36,11 @@ if __name__ == "__main__":
                 '{{ cookiecutter.project_slug }} = {{ cookiecutter.project_slug }}.cli:cli',
             ]
         },
+        setup_requires=[
+            'pytest-runner',
+        ],
         install_requires=requirements,
+        tests_require=test_requirements,
         zip_safe=False,
         license="MIT",
         keywords='{{ cookiecutter.project_slug }}',
